@@ -1,0 +1,421 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/critical.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-inverse navbar-static-top navbar-transparent navbar-overlap">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span>e</span><span>lmah.io</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/features/">Features</a>
+                    </li>
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="/pricing/">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/docs/">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="visible-xs">
+                        <a href="/authentication/redirect/Twitter" class="pull-left"><span class="fa fa-twitter icon-2x"></span></a>
+                        <a href="/authentication/redirect/Facebook" class="pull-left"><span class="fa fa-facebook icon-2x"></span></a>
+                        <a href="/authentication/redirect/Google" class="pull-left"><span class="fa fa-google-plus icon-2x"></span></a>
+                        <a href="/authentication/redirect/windowslive" class="pull-left"><span class="fa fa-windows icon-2x"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <span class="navbar-text text-muted">Sign in:</span>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Twitter"><span class="fa fa-twitter"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Facebook"><span class="fa fa-facebook"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Google"><span class="fa fa-google-plus"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/windowslive"><span class="fa fa-windows"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section section-primary section-hero pre-trianglify">
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Something for everyone</h1>
+                    <h3 class="text-center text-primary">and something special for BizSpark, MVP and Open Source...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote>
+                        <p>Elmah.io... because it's the infuriating, complex things in life becoming simple that give us joy.</p>
+                        <footer>Mike Watson
+                            <a href="https://twitter.com/jmikewatson/status/649152681215459329" target="_blank">@jmikewatson</a>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 price-col">
+                    <ul class="list-unstyled list-prices">
+                        <li class="header">Personal</li>
+                        <li data-bind="html: UsersHtml">
+                            <strong>1</strong>
+                            <span>user</span>
+                        </li>
+                        <li data-bind="html: LogsHtml">
+                            <strong>Unlimited</strong>
+                            <span>logs</span>
+                        </li>
+                        <li data-bind="html: ErrorsHtml">
+                            <strong>2500</strong>
+                            <span>messages/month</span>
+                        </li>
+                        <li data-bind="html: RetentionHtml">
+                            <strong>14</strong>
+                            <span>days retention</span>
+                        </li>
+                        <li data-bind="text: extras.SSL">SSL encryption</li>
+                        <li data-bind="text: extras.VS">Visual Studio Integration</li>
+                        <li data-bind="text: extras.Backup">Daily Backup</li>
+                        <li data-bind="text: extras.Support">Kick-Ass Support</li>
+                        <li data-bind="text: extras.Rules"></li>
+                        <li data-bind="text: extras.Zapier"></li>
+                        <li data-bind="text: extras.Replicated"></li>
+                        <li data-bind="text: extras.Invoicing"></li>
+                        <li class="price">9</li>
+                        <li class="action">
+                            <button class="btn btn-lg">Sign in</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 price-col">
+                    <ul class="list-unstyled list-prices list-prices-smallbusiness">
+                        <li class="header">Small Business</li>
+                        <li data-bind="html: UsersHtml">
+                            <strong>3</strong>
+                            <span>users</span>
+                        </li>
+                        <li data-bind="html: LogsHtml">
+                            <strong>Unlimited</strong>
+                            <span>logs</span>
+                        </li>
+                        <li data-bind="html: ErrorsHtml">
+                            <strong>5000</strong>
+                            <span>messages/month</span>
+                        </li>
+                        <li data-bind="html: RetentionHtml">
+                            <strong>30</strong>
+                            <span>days retention</span>
+                        </li>
+                        <li data-bind="text: extras.SSL">SSL encryption</li>
+                        <li data-bind="text: extras.VS">Visual Studio Integration</li>
+                        <li data-bind="text: extras.Backup">Daily Backup</li>
+                        <li data-bind="text: extras.Support">Kick-Ass Support</li>
+                        <li data-bind="text: extras.Rules">Business Rules</li>
+                        <li data-bind="text: extras.Zapier">Zapier Integration</li>
+                        <li data-bind="text: extras.Replicated">Replicated Index</li>
+                        <li data-bind="text: extras.Invoicing">Invoicing</li>
+                        <li class="price">19</li>
+                        <li class="action">
+                            <button class="btn btn-lg">Sign in</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 price-col">
+                    <ul class="list-unstyled list-prices list-prices-business">
+                        <li class="header">Business</li>
+                        <li data-bind="html: UsersHtml">
+                            <strong>20</strong>
+                            <span>users</span>
+                        </li>
+                        <li data-bind="html: LogsHtml">
+                            <strong>Unlimited</strong>
+                            <span>logs</span>
+                        </li>
+                        <li data-bind="html: ErrorsHtml">
+                            <strong>10000</strong>
+                            <span>messages/month</span>
+                        </li>
+                        <li data-bind="html: RetentionHtml">
+                            <strong>30</strong>
+                            <span>days retention</span>
+                        </li>
+                        <li data-bind="text: extras.SSL">SSL encryption</li>
+                        <li data-bind="text: extras.VS">Visual Studio Integration</li>
+                        <li data-bind="text: extras.Backup">Daily Backup</li>
+                        <li data-bind="text: extras.Support">Kick-Ass Support</li>
+                        <li data-bind="text: extras.Rules">Business Rules</li>
+                        <li data-bind="text: extras.Zapier">Zapier Integration</li>
+                        <li data-bind="text: extras.Replicated">Replicated Index</li>
+                        <li data-bind="text: extras.Invoicing">Invoicing</li>
+                        <li class="price">49</li>
+                        <li class="action">
+                            <button class="btn btn-lg">Sign in</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 price-col">
+                    <ul class="list-unstyled list-prices list-prices-enterprise">
+                        <li class="header">Enterprise</li>
+                        <li data-bind="html: UsersHtml">
+                            <strong>Unlimited</strong>
+                            <span>users</span>
+                        </li>
+                        <li data-bind="html: LogsHtml">
+                            <strong>Unlimited</strong>
+                            <span>logs</span>
+                        </li>
+                        <li data-bind="html: ErrorsHtml">
+                            <strong>25000</strong>
+                            <span>messages/month</span>
+                        </li>
+                        <li data-bind="html: RetentionHtml">
+                            <strong>90</strong>
+                            <span>days retention</span>
+                        </li>
+                        <li data-bind="text: extras.SSL">SSL encryption</li>
+                        <li data-bind="text: extras.VS">Visual Studio Integration</li>
+                        <li data-bind="text: extras.Backup">Daily Backup</li>
+                        <li data-bind="text: extras.Support">Kick-Ass Support</li>
+                        <li data-bind="text: extras.Rules">Business Rules</li>
+                        <li data-bind="text: extras.Zapier">Zapier Integration</li>
+                        <li data-bind="text: extras.Replicated">Replicated Index</li>
+                        <li data-bind="text: extras.Invoicing">Invoicing</li>
+                        <li class="price">99</li>
+                        <li class="action">
+                            <button class="btn btn-lg">Sign in</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>FAQ</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Heading</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>BizSpark, MVP and Open Source</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>BizSpark get 6 months free</h4>
+                    <p>To help other startups grow, we offer 6 months of free elmah.io usage to Microsoft BizSpark companies.
+                        <br>
+                        <br>
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="mailto:info@elmah.io?subject=BizSpark Discount Application&amp;body=Please tell us a little bit about your company and your intentions with your 6 months free elmah.io subscription."><b>BizSparks</b> apply for Small Business <small>(save $114)</small></a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Free for MVPs</h4>
+                    <p>We would like to honor influential people in the .NET world. Apply for a free Personal subscription as Microsoft MVP or Umbraco MVP.</p>
+                    <p>
+                        <a class="btn btn-default" href="mailto:info@elmah.io?subject=MVP Discount Application&amp;body=Please tell us a little bit about yourself and your intentions with your free elmah.io subscription."><b>MVPs</b> apply for a free Personal subscription.</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Free for Open Source</h4>
+                    <p>We love open source at elmah.io. Apply for a free Small Business subscription for your open source project.
+                        <br>
+                        <br>
+                    </p>
+                    <p>
+                        <a class="btn btn-default" href="mailto:info@elmah.io?subject=Open Source Application&amp;body=Please tell us a little bit about your open source project and your intentions with your free elmah.io subscription."><b>Open Source</b> apply for Small Business</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote class="with-button">
+                        <p>Elmah.io... because it's the infuriating, complex things in life becoming simple that give us joy.</p>
+                        <footer>Mike Watson
+                            <a href="https://twitter.com/jmikewatson/status/649152681215459329" target="_blank">@jmikewatson</a>
+                        </footer>
+                        <button class="btn btn-primary">Start logging now</button>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center share-bar">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="javascript:shareit('twitter')" class="btn btn-share shareTwitter"><i class="fa fa-twitter"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('facebook')" class="btn btn-share shareFacebook"><i class="fa fa-facebook"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('google')" class="btn btn-share shareGoogle"><i class="fa fa-google-plus"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('linkedin')" class="btn btn-share shareLinkedin"><i class="fa fa-linkedin"></i><span class="sharecount"></span></a>
+                        </li>
+                    </ul>
+                    <hr class="hr-inline" />
+                    <small class="text-muted">Say something about us</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Elmah.io</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/features">Features</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/pricing">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/api">API</a>
+                        </li>
+                        <li>
+                            <a href="http://blog.elmah.io/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="http://docs.elmah.io/">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://elmahio.uservoice.com/" target="_blank">UserVoice</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Social</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://plus.google.com/+ElmahIoPlus" target="_blank">Google Plus</a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/elmahdotio" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/elmah_io" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Privacy</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showTermsAndConditions()">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showTermsOfUse()">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+
+    <link href="../css/pricing.css" rel="stylesheet" type="text/css">
+    <link href="../css/elmahio.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../frontpage.js"></script>
+
+</body>
+
+</html>

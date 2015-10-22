@@ -1,0 +1,143 @@
+/*!
+ * Default theme for Pingendo 
+ * Homepage: http://pingendo.com  
+ * Copyright 2015 Pingendo 
+ * Licensed under MIT 
+ * Based on Bootstrap v3.3.4
+*/
+/* Add custom CSS classes here 
+ * 
+ * img {
+ *   box-shadow : 0px 0px 10px black !important;
+ * }
+*/
+.shadow-level-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow-level-2 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow-level-3 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow-level-4 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.shadow-level-5 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.list-prices {
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 22px;
+}
+.list-prices li {
+  padding: 10px;
+  min-height: 41px;
+  text-align: center;
+}
+.list-prices li:not(.header) {
+  border: 1px solid #dddddd;
+  border-width: 0 1px 1px 1px;
+  background-color: #f5f5f5;
+}
+.list-prices.most-popular {
+  box-shadow: 0 0 0 4px #ffffff, 0 0 0px 8px #0da58e;
+}
+.list-prices:hover {
+  margin-top: -10px;
+  margin-bottom: 0;
+  margin-left: -1%;
+  width: 101%;
+  z-index: 10;
+}
+.list-prices:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.list-prices:hover li {
+  padding: 11px;
+}
+.list-prices li.header {
+  font-size: 28px;
+  font-weight: 100;
+  background-color: #0da58e;
+  color: white;
+}
+.list-prices li.price {
+  font-size: 80px;
+  font-weight: 100;
+  border-bottom: 0;
+}
+.list-prices li.price:before {
+  content: "$";
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: -15px;
+}
+.list-prices li.price:after {
+  content: "per month";
+  color: #777777;
+  font-weight: normal;
+  font-size: 14px;
+  display: block;
+}
+.list-prices li.action {
+  padding-bottom: 40px;
+}
+.list-prices li.action .btn {
+  background-color: #0da58e;
+  border: 0;
+  color: white;
+}
+.price-col:first-child {
+  padding-right: 0;
+}
+.price-col:first-child li.header {
+  border-top-left-radius: 4px;
+}
+.price-col:first-child li.action {
+  border-bottom-left-radius: 4px;
+}
+.price-col:last-child {
+  padding-left: 0;
+}
+.price-col:last-child li.header {
+  border-top-right-radius: 4px;
+}
+.price-col:last-child li.action {
+  border-bottom-right-radius: 4px;
+}
+.price-col:not(:first-child):not(:last-child) {
+  padding-left: 0;
+  padding-right: 0;
+}
+.list-prices-smallbusiness.most-popular {
+  box-shadow: 0 0 0 4px #ffffff, 0 0 0px 8px #0b8d8b;
+}
+.list-prices-smallbusiness li.header {
+  background-color: #0b8d8b;
+}
+.list-prices-smallbusiness li.action .btn {
+  background-color: #0b8d8b;
+  color: white;
+}
+.list-prices-business.most-popular {
+  box-shadow: 0 0 0 4px #ffffff, 0 0 0px 8px #087588;
+}
+.list-prices-business li.header {
+  background-color: #087588;
+}
+.list-prices-business li.action .btn {
+  background-color: #087588;
+  color: white;
+}
+.list-prices-enterprise.most-popular {
+  box-shadow: 0 0 0 4px #ffffff, 0 0 0px 8px #065c85;
+}
+.list-prices-enterprise li.header {
+  background-color: #065c85;
+}
+.list-prices-enterprise li.action .btn {
+  background-color: #065c85;
+  color: white;
+}

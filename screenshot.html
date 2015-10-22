@@ -1,0 +1,85 @@
+<!doctype html>
+<html ng-app="site">
+
+<head>
+    <title ng-bind="title">html2canvas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/iframe2image.js"></script>
+
+    <base href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Screenshot creation with JavaScript">
+    <meta name="author" content="Niklas von Hertzen">
+    <style type="text/css">
+        #dom {
+            font-family: Arial;
+            border: 5px solid rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 260px;
+            padding: 5px 20px;
+            background: #4f8eff;
+            text-shadow: 1px 1px 0 #264782;
+            line-height: 1.4em;
+            margin: 20px;
+        }
+        
+        #dom p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        #dom strong {
+            color: #fff;
+            font-style: italic;
+        }
+    </style>
+    <link href="elmahio.css" rel="stylesheet">
+    <script src="js/domvas.js"></script>
+</head>
+
+<body>
+
+    <div id="content" style="display: inline-block;">
+        <iframe id="iframe" src="index.html" style="border: 0; width: 700px; height: 700px;" scrolling="yes"></iframe>
+    </div>
+    <canvas id="canvas" width="700" height="700"></canvas>
+
+    <button onclick="grab()">grab</button>
+    <script type="text/javascript">
+        function grab() {
+                // Set up the canvas dimensions 
+                var canvas = document.getElementById('canvas'),
+                    context = canvas.getContext('2d');
+                canvas.width = 500;
+                canvas.height = 600;
+
+                // Grab the iframe 
+                var inner = document.getElementById('iframe');
+
+                var iframeWidth = 700;
+                var iframeHeight = 700;
+                var iframeBody = inner.contentWindow.document.body;
+                domvas.toImage(iframeBody, function (img) {
+                    // Callback with the image
+                    context.drawImage(img, 0, 0);
+                }, iframeWidth, iframeHeight);
+
+
+                return;
+                // Get the image 
+                iframe2image(inner, function (err, img) {
+                    // If there is an error, log it 
+                    console.log(err, img);
+                    if (err) {
+                        return console.error(err);
+                    }
+
+                    // Otherwise, add the image to the canvas 
+                    context.drawImage(img, 0, 0);
+                });
+            }
+            //grab();
+    </script>
+
+</body>
+
+</html>

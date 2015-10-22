@@ -1,0 +1,115 @@
+@import "variables-bootstrap.less";
+@import "variables.less";
+.list-prices {
+    border-radius: @border-radius-large;
+    position: relative;
+    margin-bottom: 10px + 12;
+    li {
+        padding: 10px;
+        min-height: 41px;
+        text-align: center;
+    }
+    li:not(.header) {
+        border: 1px solid @gray-border;
+        border-width: 0 1px 1px 1px;
+        background-color: @gray-bg;
+    }
+    &.most-popular {
+        box-shadow: 0 0 0 4px white, 0 0 0px 8px @color-1;
+    }
+    &:hover {
+        .shadow-level-2();
+        margin-top: -10px;
+        margin-bottom: 0;
+        margin-left: -1%;
+        width: 101%;
+        z-index: 10;
+        li {
+            padding: 11px;
+        }
+    }
+    li.header {
+        font-size: 28px;
+        font-weight: 100;
+        background-color: @color-1;
+        color: white;
+    }
+    li.price {
+        font-size: 80px;
+        font-weight: 100;
+        border-bottom: 0;
+        &:before {
+            content: "$";
+            font-weight: normal;
+            font-size: 20px;
+            margin-left: -15px;
+        }
+        &:after {
+            content: "per month";
+            color: @gray-light;
+            font-weight: normal;
+            font-size: 14px;
+            display: block;
+        }
+    }
+    li.action {
+        padding-bottom: 40px;
+        .btn {
+            background-color: @color-1;
+            border: 0;
+            color: white;
+        }
+    }
+}
+
+.prices-color-range(@color) {
+    &.most-popular {
+        box-shadow: 0 0 0 4px white, 0 0 0px 8px @color;
+    }
+    li.header {
+        background-color: @color;
+    }
+    li.action {
+        .btn {
+            background-color: @color;
+            color: white;
+        }
+    }
+}
+
+.price-col {
+    &:first-child {
+        li.header {
+            border-top-left-radius: @border-radius-base;
+        }
+        li.action {
+            border-bottom-left-radius: @border-radius-base;
+        }
+        padding-right: 0;
+    }
+    &:last-child {
+        li.header {
+            border-top-right-radius: @border-radius-base;
+        }
+        li.action {
+            border-bottom-right-radius: @border-radius-base;
+        }
+        padding-left: 0;
+    }
+    &:not(:first-child):not(:last-child) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.list-prices-smallbusiness {
+    .prices-color-range(@color-2);
+}
+
+.list-prices-business {
+    .prices-color-range(@color-3);
+}
+
+.list-prices-enterprise {
+    .prices-color-range(@color-4);
+}

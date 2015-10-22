@@ -1,0 +1,73 @@
+@text-inverse: #333;
+@shadow-level-1-box-shadow: 0 1px 3px rgba(0,
+0,
+0,
+0.12),
+0 1px 2px rgba(0,
+0,
+0,
+0.24);
+@shadow-level-2-box-shadow: 0 3px 6px rgba(0,
+0,
+0,
+0.16),
+0 3px 6px rgba(0,
+0,
+0,
+0.23);
+@shadow-level-3-box-shadow: 0 10px 20px rgba(0,
+0,
+0,
+0.19),
+0 6px 6px rgba(0,
+0,
+0,
+0.23);
+@shadow-level-4-box-shadow: 0 14px 28px rgba(0,
+0,
+0,
+0.25),
+0 10px 10px rgba(0,
+0,
+0,
+0.22);
+@shadow-level-5-box-shadow: 0 19px 38px rgba(0,
+0,
+0,
+0.30),
+0 15px 12px rgba(0,
+0,
+0,
+0.22);
+@shadow-level: 1;
+.box-shadow-helper(@shadow-level: 1) {
+    & when (@shadow-level=1) {
+        box-shadow: @shadow-level-1-box-shadow;
+    }
+    & when (@shadow-level=2) {
+        box-shadow: @shadow-level-2-box-shadow;
+    }
+    & when (@shadow-level=3) {
+        box-shadow: @shadow-level-3-box-shadow;
+    }
+    & when (@shadow-level=4) {
+        box-shadow: @shadow-level-4-box-shadow;
+    }
+    & when (@shadow-level=5) {
+        box-shadow: @shadow-level-5-box-shadow;
+    }
+}
+
+@color-1: @brand-primary;
+@color-5: #034482;
+@color-2: mix(@color-1,
+@color-5,
+75%);
+@color-3: mix(@color-1,
+@color-5,
+50%);
+@color-4: mix(@color-1,
+@color-5,
+25%);
+@gray-border: #ddd;
+@gray-bg: #f5f5f5;

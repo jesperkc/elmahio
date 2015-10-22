@@ -1,1 +1,305 @@
-Hello World
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/critical.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-inverse navbar-static-top navbar-transparent navbar-overlap">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span>e</span><span>lmah.io</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/features/">Features</a>
+                    </li>
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a href="/pricing/">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/docs/">Docs</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="visible-xs">
+                        <a href="/authentication/redirect/Twitter" class="pull-left"><span class="fa fa-twitter icon-2x"></span></a>
+                        <a href="/authentication/redirect/Facebook" class="pull-left"><span class="fa fa-facebook icon-2x"></span></a>
+                        <a href="/authentication/redirect/Google" class="pull-left"><span class="fa fa-google-plus icon-2x"></span></a>
+                        <a href="/authentication/redirect/windowslive" class="pull-left"><span class="fa fa-windows icon-2x"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <span class="navbar-text text-muted">Sign in:</span>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Twitter"><span class="fa fa-twitter"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Facebook"><span class="fa fa-facebook"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/Google"><span class="fa fa-google-plus"></span></a>
+                    </li>
+                    <li class="hidden-xs">
+                        <a href="/authentication/redirect/windowslive"><span class="fa fa-windows"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section section-primary section-hero pre-trianglify">
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--h4 class="text-center">Don't pay for supported frameworks you don't need...</h4-->
+                    <h1 class="text-center">We capture .net bugs</h1>
+                    <h2 class="text-center text-primary">and we do it well!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">Elmah.io is based on ELMAH, the market standard for logging errors from
+                            any .NET web application</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote>
+                        <p>What a great idea, ELMAH (Error Logging) for .NET in the cloud.</p>
+                        <footer>Scott Hanselman
+                            <a href="https://twitter.com/shanselman/status/373256202659975168" target="_blank">@shanselman</a>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a class="btn btn-hg btn-primary">Start logging your errors now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="core">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="icon color-1">
+                        <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Secure" stroke="#065C85" stroke-width="3">
+                                    <path d="M149.832597,88.980516 C155.640773,94.8926023 160.172442,101.787471 163.433382,109.668019 C169.260916,104.502486 176.206058,101.79959 184.039301,101.79959 C193.000131,101.79959 200.394313,104.952968 206.660907,111.239703 C212.93748,117.536448 216.070777,124.944384 216.070777,133.934014 C216.070777,140.230759 214.504128,145.846775 210.921792,151.232545 C221.668801,153.705194 230.629631,159.331221 237.574774,168.090604 C244.519916,176.849987 248.102253,186.740583 248.102253,198.202862 C248.102253,211.45706 243.392329,222.689092 233.992437,232.129205 C224.582568,241.569318 213.386519,246.284369 200.164804,246.284369 L64.2156362,246.284369 C48.7587027,246.284369 35.5469662,240.888588 24.570448,229.876792 C13.5939297,218.875006 8.21543579,205.610797 8.21543579,190.114197 C8.21543579,179.1024 11.1292025,168.991569 17.1762661,159.771692 C23.0037995,150.561826 30.837042,143.824609 40.4764208,139.329794 C40.2469118,136.857145 40.2469118,135.055215 40.2469118,133.934014 C40.2469118,116.513891 46.2930292,101.687778 58.1588443,89.2474579 L58.1588443,48.9548138 C58.1588443,47.7901536 58.1588443,36.8411711 70.2606633,36.8411712 L75.9792949,36.8411712 C77.0713015,22.2495868 89.1420833,10.6696489 103.972237,10.6696489 C118.818046,10.6696489 130.896656,22.2495868 131.99649,36.8411712 L137.72295,36.8411712 C151,36.8411711 149.832597,47.7901536 149.832597,48.9548138 L149.832597,88.980516 Z M103.975999,21.98617 C112.490593,21.98617 119.422499,28.5660977 120.159314,36.9049368 L87.8086435,36.9049368 C88.5454578,28.5660977 95.4773643,21.98617 103.975999,21.98617 L103.975999,21.98617 Z M92.6101979,66.447204 C95.7598602,63.4522796 99.7990105,61.7941142 103.991269,61.7941142 C108.11791,61.7941142 112.062279,63.3792327 115.182778,66.257282 C115.241105,66.3157195 115.328596,66.4033758 115.379632,66.4545087 C118.769893,69.6612691 120.63636,73.9272101 120.63636,78.4561201 C120.63636,84.41675 117.501279,89.7710904 112.288297,92.7952335 C111.07801,93.5110935 110.319758,94.8040242 110.319758,96.2065254 L110.319758,129.406357 C110.334339,131.079132 109.692742,132.656946 108.511618,133.854916 C107.301331,135.067495 105.675464,135.739527 103.954815,135.739527 C100.477063,135.739527 97.6481995,132.883392 97.6481995,129.362529 L97.6481995,96.2065254 C97.6481995,94.8113289 96.8899474,93.5110935 95.6796605,92.8098429 C90.4520959,89.756481 87.3315972,84.4094453 87.3315972,78.4561201 C87.3461789,73.9199054 89.2126455,69.6539644 92.6101979,66.447204 L92.6101979,66.447204 Z" id="Lock-square-2"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Secure</h4>
+                    <p class="text-center">Your log messages are shipped off to elmah.io through a 256 bit encrypted SSL connection.&nbsp;We do what is required for you to be able to sleep at night, keeping your log messages personal.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="icon color-2">
+                        <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Unlimited" stroke="#065C85" fill="#FFFFFF" stroke-width="3">
+                                    <g id="Paper-2-+-Path-Copy-2" transform="translate(8.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                    <g id="Paper-2-+-Path-Copy-7" transform="translate(23.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                    <g id="Paper-2-+-Path-Copy-6" transform="translate(38.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                    <g id="Paper-2-+-Path-Copy-5" transform="translate(53.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                    <g id="Paper-2-+-Path-Copy-4" transform="translate(68.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                    <g id="Paper-2-+-Path-Copy-3" transform="translate(83.000000, 12.000000)">
+                                        <path d="M165.700559,66.9625701 C165.596829,65.8791736 165.276995,64.8131115 164.481733,64.0157316 L101.993141,1.37808033 C101.197879,0.563366173 100.151937,0.225346469 99.054129,0.156009094 C98.8985342,0.13867475 98.8380251,0 98.7170069,0 L4.97979771,0 C2.42977219,0 0.337886849,2.0974556 0.337886849,4.65427131 L0.337886849,12.3247184 L0.337886849,15.6442453 L0.337886849,24.9701222 L0.337886849,208.82684 L0.337886849,218.152717 L0.337886849,229.142691 C0.337886849,231.716841 2.42977219,233.814296 4.97979771,233.814296 L161.179666,233.814296 C163.74698,233.814296 165.821577,231.716841 165.821577,229.142691 L165.821577,67.309257 C165.838865,67.1879166 165.717847,67.1012448 165.700559,66.9625701 L165.700559,66.9625701 Z" id="Paper-2"></path>
+                                        <path d="M165.292844,65.2528313 L113.110905,65.2528313 C106.331415,65.2528313 100.777486,59.7133707 100.777486,52.8670655 L100.777486,0.597845625 L165.292844,65.2528313 Z" id="Path"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Unlimited Logs</h4>
+                    <p class="text-center">All plans include unlimited number of logs. Split your logs by application, customer, date, you name it.&nbsp;We never limit the number of logs you need to run your business.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="icon color-3">
+                        <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="VisualStudio" stroke="#065C85" stroke-width="3">
+                                    <path d="M6,68 L6,188.004237 L30,201 L92,151 L191,250 L251,225 L251,30.989691 L191,6 L92,105 L30,56 L6,68 Z M190,77 L190,179 L125,128 L190,77 Z M30,91 L30,166 L68,128 L30,91 Z" id="Path-1"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Visual Studio Integration</h4>
+                    <p class="text-center">Elmah.io is the only cloud logging framework which integrates directly into Visual Studio. Browse your elmah.io logs from a window inside your favorite IDE.</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="icon color-4">
+                        <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Extending" stroke="#065C85" stroke-width="3">
+                                    <path d="M118.5,151.5 L30.5,43.5" id="Line" stroke-linecap="square"></path>
+                                    <path d="M117.5,151 L154.5,44" id="Line" stroke-linecap="square"></path>
+                                    <path d="M117.5,151 L229.5,83" id="Line" stroke-linecap="square"></path>
+                                    <path d="M117.5,152 L226.5,196" id="Line" stroke-linecap="square"></path>
+                                    <path d="M117.5,152 L68.5,211" id="Line" stroke-linecap="square"></path>
+                                    <path d="M118.5,152 L38.5,134" id="Line" stroke-linecap="square"></path>
+                                    <circle id="Oval-26" fill="#FFFFFF" cx="33" cy="43.5" r="22"></circle>
+                                    <circle id="Oval-26-Copy" fill="#FFFFFF" cx="68" cy="211.5" r="29"></circle>
+                                    <circle id="Oval-26-Copy-4" fill="#FFFFFF" cx="154" cy="44.5" r="29"></circle>
+                                    <circle id="Oval-26-Copy-2" fill="#FFFFFF" cx="225.5" cy="196" r="16.5"></circle>
+                                    <circle id="Oval-26-Copy-3" fill="#FFFFFF" cx="228.5" cy="83" r="16.5"></circle>
+                                    <circle id="Oval-26-Copy-5" fill="#FFFFFF" cx="38.5" cy="134" r="16.5"></circle>
+                                    <circle id="Oval-26-Copy-6" fill="#FFFFFF" cx="118" cy="151.5" r="12"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Extending the standard</h4>
+                    <p class="text-center">Elmah.io is based on ELMAH, the market standard for logging errors from any .NET web application. But we don’t stop there. Everything from verbose messages to fatal errors are supported by our .NET client and logging framework integrations.
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h4 class="text-center">
+                            <a href="features.html">Learn more about logging and tracking errors - notifications and integrations</a>
+                        </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center share-bar">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="javascript:shareit('twitter')" class="btn btn-share shareTwitter"><i class="fa fa-twitter"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('facebook')" class="btn btn-share shareFacebook"><i class="fa fa-facebook"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('google')" class="btn btn-share shareGoogle"><i class="fa fa-google-plus"></i><span class="sharecount"></span></a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a href="javascript:shareit('linkedin')" class="btn btn-share shareLinkedin"><i class="fa fa-linkedin"></i><span class="sharecount"></span></a>
+                        </li>
+                    </ul>
+                    <hr class="hr-inline" />
+                    <small class="text-muted">Say something about us</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Elmah.io</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/features">Features</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/pricing">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/api">API</a>
+                        </li>
+                        <li>
+                            <a href="http://blog.elmah.io/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="http://docs.elmah.io/">Docs</a>
+                        </li>
+                        <li>
+                            <a href="https://elmahio.uservoice.com/" target="_blank">UserVoice</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Social</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://plus.google.com/+ElmahIoPlus" target="_blank">Google Plus</a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/elmahdotio" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/elmah_io" target="_blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Privacy</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showTermsAndConditions()">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showTermsOfUse()">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </footer>
+
+    <link href="../css/elmahio.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../frontpage.js"></script>
+
+</body>
+
+</html>
