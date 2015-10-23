@@ -1,7 +1,7 @@
 WebFontConfig = {
     google: {
         families: ['Roboto:100,300,500,900', 'Quicksand:400,700'],
-        text: 'abcdedfghijklmopqrstuvwxyz!.-\'' + 'abcdedfghijklmopqrstuvwxyz'.toUpperCase()
+        text: 'abcdefghijklmnopqrstuvwxyz!.-\'' + 'abcdefghijklmnopqrstuvwxyz'.toUpperCase()
     },
   fontactive: function(familyName, fvd) {
     if (localStorage){
