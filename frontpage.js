@@ -25,7 +25,7 @@ WebFontConfig = {
         }
     }else{*/
         var wf = document.createElement('script');
-        wf.src = '../js/webfont.js';
+        wf.src = document.location.host.indexOf('github')>-1 ? '/elmahiodesign/js/webfont.js' : '/js/webfont.js';
         wf.type = 'text/javascript';
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
